@@ -90,17 +90,6 @@ PRODIGY_SD_01/
 
 ---
 
-## 📸 Screenshots
-
-> _Add screenshots of the web app and the Java Swing window here_
-
-```
-/screenshots/web.png
-/screenshots/java.png
-```
-
----
-
 ## 🧠 What I Learned
 
 - Working with **DOM events** and form handling in JavaScript
