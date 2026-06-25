@@ -1,0 +1,72 @@
+<!--
+  Task 01 - Temperature Converter
+  Prodigy InfoTech - Software Development Internship
+  Made by: Mansi (B.Tech)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter | Task 01</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <div class="header">
+        <span class="badge">Task 01</span>
+        <h1>Temperature Converter</h1>
+        <p class="subtitle">Convert between Celsius, Fahrenheit and Kelvin.</p>
+      </div>
+
+      <form id="convertForm" class="form">
+        <div class="field">
+          <label for="tempInput">Temperature value</label>
+          <input type="text" id="tempInput" placeholder="e.g. 25" />
+        </div>
+
+        <div class="field">
+          <label>From unit</label>
+          <div class="unit-group">
+            <button type="button" class="unit-btn active" data-unit="C">Celsius (°C)</button>
+            <button type="button" class="unit-btn" data-unit="F">Fahrenheit (°F)</button>
+            <button type="button" class="unit-btn" data-unit="K">Kelvin (K)</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn primary">Convert</button>
+          <button type="button" id="resetBtn" class="btn ghost">Reset</button>
+        </div>
+      </form>
+
+      <div id="errorBox" class="error" style="display:none;"></div>
+
+      <div id="resultBox" class="results" style="display:none;">
+        <h3>Results</h3>
+        <div class="result-grid">
+          <div class="result-item" id="resC">
+            <span class="result-label">Celsius</span>
+            <span class="result-value">-</span>
+          </div>
+          <div class="result-item" id="resF">
+            <span class="result-label">Fahrenheit</span>
+            <span class="result-value">-</span>
+          </div>
+          <div class="result-item" id="resK">
+            <span class="result-label">Kelvin</span>
+            <span class="result-value">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Made by Mansi — Prodigy InfoTech Software Development Internship — Task 01
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
